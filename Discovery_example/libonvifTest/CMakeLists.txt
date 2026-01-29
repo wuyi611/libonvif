@@ -13,9 +13,9 @@ install(TARGETS libonvifTest
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
-set(ONVIF_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/libonvif/include")
-set(ONVIF_LIB_DIR     "${CMAKE_CURRENT_SOURCE_DIR}/libonvif/lib")
-set(ONVIF_DLL         "${CMAKE_CURRENT_SOURCE_DIR}/libonvif/bin/libonvif.dll")
+set(ONVIF_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/libonvif_vc64/include")
+set(ONVIF_LIB_DIR     "${CMAKE_CURRENT_SOURCE_DIR}/libonvif_vc64/lib")
+set(ONVIF_DLL         "${CMAKE_CURRENT_SOURCE_DIR}/libonvif_vc64/bin/libonvif.dll")
 
 
 add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
