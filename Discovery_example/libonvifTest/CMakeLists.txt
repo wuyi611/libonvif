@@ -5,7 +5,9 @@ project(libonvifTest LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(libonvifTest main.cpp)
+add_executable(libonvifTest main.cpp
+    onvif-util.cpp
+    getopt-win.h)
 
 include(GNUInstallDirs)
 install(TARGETS libonvifTest
